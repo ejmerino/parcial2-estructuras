@@ -20,13 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="mystring.h" />
+    <ClInclude Include="String.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="Operation.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mystring.cpp" />
+    <ClCompile Include="String.cpp" />
     <ClCompile Include="Operation.cpp" />
     <ClCompile Include="PolacaInversa.cpp" />
   </ItemGroup>

@@ -24,7 +24,7 @@
     <ClInclude Include="Stack.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="mystring.h">
+    <ClInclude Include="String.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Nodo.h">
@@ -35,7 +35,7 @@
     <ClCompile Include="Operation.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="mystring.cpp">
+    <ClCompile Include="String.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="PolacaInversa.cpp">

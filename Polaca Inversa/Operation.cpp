@@ -6,7 +6,7 @@
     Josué Merino
     Daniel Vizcarra
     Fecha de Creación: 15/01/2022
-    Fecha de Modificación: 17/01/2022
+    Fecha de Modificación: 25/01/2022
 */
 
 #include "Operation.h"
@@ -14,7 +14,7 @@
 string Operation::infix_to_prefix(string infix)
 {
     Stack<char> stack;
-    mystring str;
+    string_polacainversa str;
     string cad = str.reverse(infix);
     string result, prefix;
     string aux;
@@ -120,7 +120,7 @@ string Operation::infix_to_funtional(string expression)
 
 string Operation::prefix_to_infix(string prefix)
 {
-    mystring str;
+    string_polacainversa str;
     string cad = str.reverse(prefix);
     string aux, aux2;
     string charac = "";
@@ -204,7 +204,7 @@ string Operation::prefix_to_infix(string prefix)
 
 string Operation::prefix_to_postfix(string prefix)
 {
-    mystring str;
+    string_polacainversa str;
     string cad = str.reverse(prefix);
     string aux, aux2;
     string charac = "";
@@ -292,7 +292,7 @@ string Operation::prefix_to_postfix(string prefix)
 
 string Operation::prefix_to_funtional(string prefix)
 {
-    mystring str;
+    string_polacainversa str;
     string cad = str.reverse(prefix);
     string aux, aux2;
     string charac = "";
@@ -376,7 +376,7 @@ string Operation::prefix_to_funtional(string prefix)
 
 string Operation::postfix_to_infix(string expression)
 {
-    mystring str;
+    string_polacainversa str;
     string aux, aux2;
     string charac = "";
     Stack<string> stack;
@@ -482,7 +482,7 @@ bool Operation::is_operand(char c)
 
 bool Operation::is_postfix(string expression)
 {
-    mystring str;
+    string_polacainversa str;
     int lenth = str.length(expression);
     char c = str.at(1, expression);
     char c2 = str.at(lenth, expression);
@@ -494,7 +494,7 @@ bool Operation::is_postfix(string expression)
 
 bool Operation::is_infix(string expression)
 {
-    mystring str;
+    string_polacainversa str;
     int lenth = str.length(expression);
     char c = str.at(1, expression);
     char c2 = str.at(lenth, expression);
@@ -506,7 +506,7 @@ bool Operation::is_infix(string expression)
 
 bool Operation::is_prefix(string expression)
 {
-    mystring str;
+    string_polacainversa str;
     int lenth = str.length(expression);
     char c = str.at(1, expression);
     char c2 = str.at(lenth, expression);

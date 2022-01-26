@@ -1,3 +1,8 @@
 ﻿  Operation.cpp
+  PolacaInversa.cpp
+C:\Users\JOSUE\Desktop\Polaca Inversa\Menu.h(41,18): warning C4838: la conversión de 'USHORT' en 'SHORT' requiere una conversión de restricción
+C:\Users\JOSUE\Desktop\Polaca Inversa\Menu.h(41,20): warning C4838: la conversión de 'USHORT' en 'SHORT' requiere una conversión de restricción
+  String.cpp
+  Generando código...
 C:\Users\JOSUE\Desktop\Polaca Inversa\Operation.cpp(528): warning C4715: 'Operation::has_parenthesis': no todas las rutas de acceso de control devuelven un valor
   Polaca Inversa.vcxproj -> C:\Users\JOSUE\Desktop\Polaca Inversa\x64\Debug\Polaca Inversa.exe

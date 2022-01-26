@@ -6,7 +6,7 @@
     Josué Merino
     Daniel Vizcarra
     Fecha de Creación: 15/01/2022
-    Fecha de Modificación: 17/01/2022
+    Fecha de Modificación: 25/01/2022
 */
 
 #pragma once
@@ -92,7 +92,7 @@ void menu_principal()
         case 3:
             system("cls");
             do {
-                cout << "Ingrese la expresion sufija:";
+                cout << "Ingrese la expresion postfija:";
                 cin >> expression;
             } while (!op.is_postfix(expression));
             cout << "Notacion prefija:" << op.postfix_to_prefix(expression) << endl;

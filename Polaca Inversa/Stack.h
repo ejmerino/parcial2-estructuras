@@ -6,7 +6,7 @@
 	Josué Merino
 	Daniel Vizcarra
 	Fecha de Creación: 15/01/2022
-	Fecha de Modificación: 17/01/2022
+	Fecha de Modificación: 25/01/2022
 */
 
 #pragma once
@@ -203,9 +203,6 @@ void Stack<T>::llenar_aleatorio_lista()
 			insertar_por_la_cola(aleatorio);
 		}
 	}
-
-
-
 }
 template<class T>
 T Stack<T>::maximo_comun_divisor(T elementos)
@@ -223,16 +220,12 @@ T Stack<T>::maximo_comun_divisor(T elementos)
 				contador = contador + 1;
 			}
 			temporal = temporal->get_siguiente();
-
-
 		}
 
 		if (elementos == contador) {
 			mcd = i;
 		}
-
 	}
-
 	return T(mcd);
 }
 template<class T>
