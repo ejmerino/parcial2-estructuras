@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\2. I. DE SOFTWARE\Semestre\3er semestre\Estructura de Datos\2do parcial\PROYECTO LOGIN\Inicio de Sesion\Inicio de Sesion\main.cpp(65,10): warning C4101: 'opcion': variable local sin referencia
+D:\2. I. DE SOFTWARE\Semestre\3er semestre\Estructura de Datos\2do parcial\PROYECTO LOGIN\Inicio de Sesion\Inicio de Sesion\main.cpp(67,10): warning C4101: 'fin': variable local sin referencia
+D:\2. I. DE SOFTWARE\Semestre\3er semestre\Estructura de Datos\2do parcial\PROYECTO LOGIN\Inicio de Sesion\Inicio de Sesion\main.cpp(67,15): warning C4101: 'encontrado': variable local sin referencia
+D:\2. I. DE SOFTWARE\Semestre\3er semestre\Estructura de Datos\2do parcial\PROYECTO LOGIN\Inicio de Sesion\Inicio de Sesion\main.cpp(66,9): warning C4101: 'num': variable local sin referencia
+  Inicio de Sesion.vcxproj -> D:\2. I. DE SOFTWARE\Semestre\3er semestre\Estructura de Datos\2do parcial\PROYECTO LOGIN\Inicio de Sesion\Debug\Inicio de Sesion.exe
