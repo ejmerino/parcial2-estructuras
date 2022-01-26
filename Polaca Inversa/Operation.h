@@ -6,11 +6,11 @@
 	Josué Merino
 	Daniel Vizcarra
 	Fecha de Creación: 15/01/2022
-	Fecha de Modificación: 25/01/2022
+	Fecha de Modificación: 17/01/2022
 */
 
 #pragma once
-#include "String.h"
+#include "mystring.h"
 #include "Stack.h"
 class Operation
 {

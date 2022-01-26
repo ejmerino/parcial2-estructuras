@@ -6,7 +6,7 @@
     Josué Merino
     Daniel Vizcarra
     Fecha de Creación: 15/01/2022
-    Fecha de Modificación: 25/01/2022
+    Fecha de Modificación: 17/01/2022
 */
 
 #pragma once
@@ -15,6 +15,8 @@
 #include <windows.h>
 #include <string>
 #include "Operation.h"
+
+
 #pragma warning(disable:4996)
 #define ARRIBA 72
 #define ABAJO 80
@@ -46,8 +48,8 @@ void gotoxy(USHORT x, USHORT y) {
  *
  * @return void
  */
-void Color(int Background, int Text) { 
-    HANDLE Console = GetStdHandle(STD_OUTPUT_HANDLE); 
+void Color(int Background, int Text) {
+    HANDLE Console = GetStdHandle(STD_OUTPUT_HANDLE);
     int    New_Color = Text + (Background * 16);
     SetConsoleTextAttribute(Console, New_Color);
 }
@@ -69,7 +71,7 @@ void menu_principal()
         case 1:
             system("cls");
             do {
-                cout << "Ingrese la expresion infija:";
+                gotoxy(15, 3); cout << "Ingrese la expresion infija:";
                 cin >> expression;
             } while (!op.is_infix(expression));
             cout << "Notacion prefija:" << op.infix_to_prefix(expression) << endl;
@@ -81,7 +83,7 @@ void menu_principal()
         case 2:
             system("cls");
             do {
-                cout << "Ingrese la expresion prefija:";
+                gotoxy(15, 3); cout << "Ingrese la expresion prefija:";
                 cin >> expression;
             } while (!op.is_prefix(expression));
             cout << "Notacion infija:" << op.prefix_to_infix(expression) << endl;
@@ -92,7 +94,7 @@ void menu_principal()
         case 3:
             system("cls");
             do {
-                cout << "Ingrese la expresion postfija:";
+                gotoxy(15, 3); cout << "Ingrese la expresion sufija:";
                 cin >> expression;
             } while (!op.is_postfix(expression));
             cout << "Notacion prefija:" << op.postfix_to_prefix(expression) << endl;
@@ -102,7 +104,7 @@ void menu_principal()
             break;
         case 4:
             system("cls");
-            cout << "\nGracias!" << endl;
+            gotoxy(15, 3); cout << "\nGracias!" << endl;
             repite = false;
             system("pause>nul");
             break;
@@ -116,6 +118,9 @@ int menu(const char titulo[], const char* opciones[], int n)
     int opcionSeleccionada = 1;
     int tecla;
     bool repite = true;
+
+
+
     do {
         system("cls");
         gotoxy(5, 3 + opcionSeleccionada);  Color(1, 2); cout << "==>" << endl;
@@ -124,10 +129,10 @@ int menu(const char titulo[], const char* opciones[], int n)
         for (int i = 0; i < n; ++i) {
             gotoxy(10, 4 + i); cout << i + 1 << ") " << opciones[i];
         }
-        
+
         do {
             tecla = getch();
-         
+
         } while (tecla != ARRIBA && tecla != ABAJO && tecla != ENTER);
         switch (tecla) {
         case ARRIBA:
